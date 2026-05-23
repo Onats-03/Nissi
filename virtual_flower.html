@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Flower</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff7cc);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 350px;
+    }
+
+    .flower {
+      font-size: 100px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      color: #ff4f81;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: #ff4f81;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #e63c6f;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="flower">🌸</div>
+    <h1>A Virtual Flower For You</h1>
+    <p>Sending you a flower with appreciation and good vibes.</p>
+    <a href="https://example.com" target="_blank">Open Surprise Link</a>
+  </div>
+</body>
+</html>
